@@ -8,11 +8,20 @@ actor DBank {
 
   //Debug.print(debug_show(id));
 
-  func topUp() {
+  public func topUp() {
     currentValue += 1;
     Debug.print(debug_show(currentValue));
   };
 
-  topUp();
+  //topUp();
+
+  // Allow users to withdrawl an amunt from the currentValue
+  // Decrease the currentValue by the amount
+
+  public func withdrawl(amount: Nat) {
+    currentValue -= amount;
+    Debug.print(debug_show(currentValue));
+  };
 
 }
+
