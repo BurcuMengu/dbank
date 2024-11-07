@@ -1,4 +1,5 @@
 import Debug "mo:base/Debug";
+import Time "mo:base/Time";
 
 actor DBank {
   var currentValue: Nat = 300;
